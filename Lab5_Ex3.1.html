@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiển thị Nội dung Số - Lab 5</title>
+    <title>Trang Giới Thiệu Cá Nhân & Sản Phẩm - Lab 5</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
         header {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             background-color: #0056b3;
             color: #fff;
             border-radius: 8px;
@@ -24,13 +23,14 @@
             max-width: 900px;
             margin: 20px auto;
             background: #fff;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        .media-section {
-            margin-bottom: 30px;
-            text-align: center;
+        .profile-section, .media-section {
+            margin-bottom: 35px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
         }
         .media-section img {
             max-width: 100%;
@@ -53,23 +53,22 @@
             height: 100%;
             border: 0;
         }
-        .yt-btn {
+        .btn {
             display: inline-block;
-            margin-top: 15px;
+            margin-top: 10px;
             padding: 10px 20px;
-            background-color: #ff0000;
+            background-color: #0056b3;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
         }
-        .yt-btn:hover {
-            background-color: #cc0000;
+        .btn-yt {
+            background-color: #ff0000;
         }
         footer {
             margin-top: 30px;
             padding-top: 15px;
-            border-top: 1px solid #ccc;
             font-size: 0.9em;
             color: #666;
             text-align: center;
@@ -79,23 +78,38 @@
 <body>
 
     <header>
-        <h1>Báo Cáo Nội Dung Số</h1>
-        <p>Thực hành tạo và hiển thị truyền thông đa phương tiện</p>
+        <h1>Trang Thông Tin Cá Nhân & Sản Phẩm Lab 05</h1>
+        <p>Học phần: CT005 - Phát triển Nội dung số</p>
     </header>
 
     <div class="container">
-        <!-- Phần 1: Infographic -->
-        <section class="media-section">
-            <h2>Infographic: Lợi Ích Của Công Nghệ Số</h2>
-            <p>Infographic trình bày các lợi ích quan trọng của việc ứng dụng công nghệ số trong học tập và công việc.</p>
-            <img src="Lab05_Ex2.1.png" alt="Infographic Lợi ích của công nghệ số">
+        <!-- Thông tin cá nhân -->
+        <section class="profile-section">
+            <h2>THÔNG TIN CÁ NHÂN</h2>
+            <p><strong>Họ và tên:</strong> Huỳnh Trung Vĩnh</p>
+            <p><strong>Mã số sinh viên:</strong> B2605483</p>
+            <p><strong>Lớp học phần:</strong> CT005-01</p>
+            <p><strong>Giới thiệu:</strong> Chào mừng bạn đến với trang báo cáo các sản phẩm nội dung số được hoàn thành trong bài thực hành Lab 05.</p>
         </section>
 
-        <!-- Phần 2: Video Youtube -->
+        <!-- Sản phẩm 1: File PDF -->
         <section class="media-section">
-            <h2>Video Giới Thiệu</h2>
-            <p>Video ngắn tổng quan về ứng dụng công nghệ số trong đời sống hiện đại.</p>
-            
+            <h2>Sản phẩm 1: Tài liệu PDF (Nhiệm vụ 1.2)</h2>
+            <p>Tài liệu tổng hợp nội dung số được xuất bản dưới định dạng PDF.</p>
+            <a href="Lab05_Ex1.2.pdf" target="_blank" class="btn">📄 Xem/Tải tài liệu PDF</a>
+        </section>
+
+        <!-- Sản phẩm 2: File PNG Infographic -->
+        <section class="media-section" style="text-align: center;">
+            <h2>Sản phẩm 2: Infographic PNG (Nhiệm vụ 2.1)</h2>
+            <p>Infographic trình bày các nội dung trực quan hóa thông tin.</p>
+            <img src="Lab05_Ex2.1.png" alt="Infographic Lab 05">
+        </section>
+
+        <!-- Sản phẩm 3: Video YouTube -->
+        <section class="media-section" style="text-align: center;">
+            <h2>Sản phẩm 3: Video YouTube (Nhiệm vụ 2.2)</h2>
+            <p>Video truyền thông số được đăng tải trên nền tảng YouTube.</p>
             <div class="shorts-container">
                 <iframe src="https://www.youtube.com/embed/hyPjbzWePw4" 
                         title="YouTube video player" 
@@ -103,20 +117,18 @@
                         allowfullscreen>
                 </iframe>
             </div>
-
             <p>
-                <a href="https://youtube.com/shorts/hyPjbzWePw4" target="_blank" class="yt-btn">
+                <a href="https://youtube.com/shorts/hyPjbzWePw4" target="_blank" class="btn btn-yt">
                     ▶ Phát trực tiếp trên YouTube
                 </a>
             </p>
         </section>
 
-        <!-- Phần 3: Ghi chú bản quyền & Nguồn AI -->
+        <!-- Ghi chú bản quyền -->
         <footer>
-            <p><strong>Ghi chú bản quyền & Nguồn gốc:</strong></p>
-            <p>- Mã nguồn HTML này được hỗ trợ tạo bởi <strong>GitHub Copilot</strong> (AI Assistant).</p>
-            <p>- Infographic được tạo bởi Canva AI, hình ảnh từ Unsplash (Unsplash License).</p>
-            <p>- Video được dựng bởi CapCut, tư liệu từ Pexels / FreeSound (CC0).</p>
+            <p><strong>Ghi chú bản quyền & Nguồn gốc AI:</strong></p>
+            <p>- Mã nguồn HTML và bố cục giao diện được hỗ trợ tạo bởi <strong>GitHub Copilot</strong>.</p>
+            <p>- Nội dung đa phương tiện bao gồm tư liệu sáng tạo cá nhân kết hợp công cụ AI sáng tạo.</p>
         </footer>
     </div>
 
